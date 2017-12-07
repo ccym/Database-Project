@@ -34,7 +34,7 @@
 
 > An easier way to figure out which dish you want best for the next meal
 
-- The customer can see the menu of food from 5 different contries, also the picture and the commit about the dishes.
+- The customer can see the menu of food from 5 different contries, also the picture and the comment about the dishes.
 - The manager can login to the website, change the infomation of the dishes, add dishes and delete the dishes. 
 
 
@@ -46,6 +46,17 @@
 
 ### The Schema For the Database (The Table Definitions)
 ---
+
+1. **China**
+```sql
+" CREATE TABLE `worldkitchen`.`China` (\rn\" +
+" `id` NUMBER NOT NULL, \r\n" +
+" `Menu` VARCHAR(35) NOT NULL, \r\n" +
+" `Price` NUMBER NOT NULL, \r\n" +
+" `Ingredients` VARCHAR (256) NOT NULL, \r\n" +
+" `Sauce` VARCHAR (35) NOT NULL, \r\n"+ 
+" `PRIMARY KEY (`id`) \r\n" )
+```
 
 
 
@@ -69,7 +80,7 @@
    2. Change the price of a dish in a table, this can only be done by manager.
    
  - **Delete**
-   1. Delete a contry table.
+   1. Delete a country table.
    2. Delete a dish inside a country table.
    3. Delete a column, for example price, and ingredients inside a country table.
 
