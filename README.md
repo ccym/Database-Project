@@ -122,6 +122,8 @@
    1. Delete a country table.
    2. Delete a dish inside a country table.
    3. Delete a column, for example price, and ingredients inside a country table.
-
+   
+   
+### Entity Relationship Diagram (ERD)
 
 
