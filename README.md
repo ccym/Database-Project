@@ -8,7 +8,6 @@
 - [World Kitchen](#world-kitchen)
    - [Team Members](#team-members)
    - [Description of Application](#description-of-application)
-   - [Technology stack](#technology-stack)
    - [The Schema For the Database (The Table Definitions)](#the-schema-for-the-database-the-table-definitions)
    - [Explanation of Where the App is doing create, read, update, and delete](#explanation-of-where-the-app-is-doing-create-read-update-and-delete)
    - [Entity Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
@@ -39,10 +38,6 @@
 
 
 
-### Technology Stack
----
-
-
 
 ### The Schema For the Database (The Table Definitions)
 ---
@@ -50,6 +45,50 @@
 1. **China**
 ```sql
 " CREATE TABLE `worldkitchen`.`China` (\rn\" +
+" `id` NUMBER NOT NULL, \r\n" +
+" `Menu` VARCHAR(35) NOT NULL, \r\n" +
+" `Price` NUMBER NOT NULL, \r\n" +
+" `Ingredients` VARCHAR (256) NOT NULL, \r\n" +
+" `Sauce` VARCHAR (35) NOT NULL, \r\n"+ 
+" `PRIMARY KEY (`id`) \r\n" )
+```
+
+2. **Italia**
+```sql
+" CREATE TABLE `worldkitchen`.`Italia` (\rn\" +
+" `id` NUMBER NOT NULL, \r\n" +
+" `Menu` VARCHAR(35) NOT NULL, \r\n" +
+" `Price` NUMBER NOT NULL, \r\n" +
+" `Ingredients` VARCHAR (256) NOT NULL, \r\n" +
+" `Sauce` VARCHAR (35) NOT NULL, \r\n"+ 
+" `PRIMARY KEY (`id`) \r\n" )
+```
+
+3. **Japan**
+```sql
+" CREATE TABLE `worldkitchen`.`Japan` (\rn\" +
+" `id` NUMBER NOT NULL, \r\n" +
+" `Menu` VARCHAR(35) NOT NULL, \r\n" +
+" `Price` NUMBER NOT NULL, \r\n" +
+" `Ingredients` VARCHAR (256) NOT NULL, \r\n" +
+" `Sauce` VARCHAR (35) NOT NULL, \r\n"+ 
+" `PRIMARY KEY (`id`) \r\n" )
+```
+
+4. **Thailand**
+```sql
+" CREATE TABLE `worldkitchen`.`Thailand` (\rn\" +
+" `id` NUMBER NOT NULL, \r\n" +
+" `Menu` VARCHAR(35) NOT NULL, \r\n" +
+" `Price` NUMBER NOT NULL, \r\n" +
+" `Ingredients` VARCHAR (256) NOT NULL, \r\n" +
+" `Sauce` VARCHAR (35) NOT NULL, \r\n"+ 
+" `PRIMARY KEY (`id`) \r\n" )
+```
+
+5. **Vietnam**
+```sql
+" CREATE TABLE `worldkitchen`.`Vietnam` (\rn\" +
 " `id` NUMBER NOT NULL, \r\n" +
 " `Menu` VARCHAR(35) NOT NULL, \r\n" +
 " `Price` NUMBER NOT NULL, \r\n" +
